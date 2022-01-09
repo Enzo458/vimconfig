@@ -32,3 +32,20 @@ nmap <leader>tv <C-w>v
 nmap <leader>mj 10j
 nmap <leader>mk 10k
 nmap <leader>t :! 
+nmap <leader>o o<ESC>p
+
+" GoTo code navigation.
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+" Symbol renaming.
+nmap <leader>rn <Plug>(coc-rename)
+
+" Formatting selected code.
+xmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
+
+" error sugerencias
+nmap <leader>b :CocFix<CR>
